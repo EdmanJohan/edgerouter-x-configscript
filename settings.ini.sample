@@ -1,0 +1,19 @@
+# your switch's vlan
+switchvlan=150
+
+# tour switch's subnet
+switchsubnet=151
+
+# the firmware which will upladed to the switch (file needed in ./firmware)
+firmwareversion="v1.9.7"
+
+# your url url to register your switch
+registeraddress="http://url-to-your-register-server"
+
+# edgeos default IP (192.168.1.1)
+defaultip=192.168.1.1
+
+# your ssh options
+sshopts="-q -o StrictHostKeyChecking=no -o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null/"
+
+
