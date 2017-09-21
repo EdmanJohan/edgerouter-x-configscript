@@ -1,16 +1,5 @@
 #!/bin/bash
-switchvlan=250
-switchsubnet=251
-
-firmwareversion="v1.9.7"
-
-
-registeraddress="https://edvubuntu.mdc-berlin.net/netreport/subnet_detail.php"
-
-defaultip=192.168.1.1
-firmware=$(basename $(ls -1 ./firmware/*$firmwareversion*))
-config=$(basename $(ls -1 ./config/config.boot))
-sshopts="-q -o StrictHostKeyChecking=no -o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null/"
+. ./settings.ini
 
 interface=$(nmcli dev status | grep ethernet | awk '{ print $1 }')
 
