@@ -1,5 +1,10 @@
 #!/bin/bash
+
 . ./settings.ini
+
+firmware=$(basename $(ls -1 ./firmware/*$firmwareversion*))
+config=$(basename $(ls -1 ./config/config.boot))
+
 
 interface=$(nmcli dev status | grep ethernet | awk '{ print $1 }')
 
