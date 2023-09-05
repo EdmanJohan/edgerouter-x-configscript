@@ -1,3 +1,9 @@
 settings.ini
+
+# Ignore firmware files
 firmware/*.tar
-config/config.boot*
+
+# Ignore custom boot configuration files
+config/config-*.boot
+config/config.boot
+

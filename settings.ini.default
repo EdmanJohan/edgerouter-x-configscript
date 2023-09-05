@@ -1,0 +1,19 @@
+# Sample configuration file
+
+# The Firmware which will be uploaded to the device (file needed in ./firmware)
+firmwareVersion="v2.0.9-hotfix.7"
+
+# EdgeOS default IP (192.168.1.1)
+defaultIP=192.168.1.1
+
+# Default subnet to replace, if unique subnets are used
+defaultSubnet=10.143.178
+
+# SSH options
+# -q: quiet mode
+# -o StrictHostKeyChecking=no: do not ask for confirmation
+# -o GlobalKnownHostsFile=/dev/null: do not use known_hosts file
+# -o UserKnownHostsFile=/dev/null: do not use known_hosts file
+sshOpts="-q -o StrictHostKeyChecking=no -o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null/"
+
+
